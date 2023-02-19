@@ -1,5 +1,6 @@
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import TopNav from "./scenes/global/TopNav";
 function App() {
   const [theme, colorMode] = useMode()
 
@@ -10,7 +11,7 @@ function App() {
           <CssBaseline/> 
           <div className="app">
             <main className="content">
-
+                <TopNav />
             </main>
           </div>
         </ThemeProvider>
